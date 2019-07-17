@@ -1,1 +1,1 @@
-web: python cri_red.py 
+worker: python cri_red.py
