@@ -1,1 +1,1 @@
-web: gunicorn server:app
+worker: python cri_red.py
