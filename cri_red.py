@@ -25,8 +25,8 @@ reddit = praw.Reddit(client_id='477ySXxt3C4kNQ',
                      user_agent='PrawTut', username='thenikkkhil')
 
 
-for comment in reddit.subreddit('cricket').stream.comments():
-# for comment in reddit.subreddit('cricket').stream.comments(skip_existing=True):
+# for comment in reddit.subreddit('cricket').stream.comments():
+for comment in reddit.subreddit('cricket').stream.comments(skip_existing=True):
     count +=1
     canvas = random.choice(colors)
     # print(colored(count,canvas ), colored('.', canvas),  colored(comment.body, canvas))
