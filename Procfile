@@ -1,1 +1,1 @@
-web: python cri_red.py runserver 0.0.0.0:$PORT
+web: python cri_red.py 

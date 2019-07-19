@@ -49,4 +49,5 @@ for comment in reddit.subreddit('cricket').stream.comments():
     #     print(colored(count,canvas ), colored('.', canvas),  colored(comment.body, canvas))
     #     test = telegram_bot_sendtext('874736358:AAHAJpiYI8zShXVHU6BlAsJMXODdbSDruNo','609735179',comment.body)
 app = Flask(__name__)
-app.run(environ.get('PORT'))
+port = int(os.environ.get('PORT', 5000))
+app.run(host='0.0.0.0', port=port)
