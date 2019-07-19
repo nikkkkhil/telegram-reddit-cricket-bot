@@ -1,1 +1,1 @@
-web: python cri_red.py 
+web: gunicorn --bind 0.0.0.0:${PORT} wsgi
